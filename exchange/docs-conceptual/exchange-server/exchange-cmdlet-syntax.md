@@ -123,8 +123,6 @@ The following table shows the valid operators that you can use in an Exchange co
 |**[ ]**|Brackets are used to specify the index value of an array position. Index values are offsets that start at zero. For example, `$Red[9]` refers to the tenth index position in the array, `$Red`. <br/> Brackets can also be used to assign a type to a variable (for example, `$A=[XML] "<Test><A>value</A></Test>"`). The following variable types are available: `Array`, `Bool`, `Byte`, `Char`, `Char[]`, `Decimal`, `Double`, `Float`, `Int`, `Int[]`, `Long`, `Long[]`, `RegEx`, `Single`, `ScriptBlock`, `String`, `Type`, and `XML.`|
 |**{ }**|Braces are used to include an expression in a command. For example, Get-Process \| Where {$\_.HandleCount -gt 400}|
 |**\|**|The pipe symbol is used when one cmdlet pipes a result to another cmdlet. For example, Get-Mailbox -Server SRV1 \| Set-Mailbox -ProhibitSendQuota 2GB.|
-|**\>**|The right-angle bracket is used to send the output of a command to a file, and the contents of the file are overwritten. For example, `Get-TransportRulePredicate > "C:\My Documents\Output.txt"`.|
-|**\>\>**|Double right-angle brackets are used to append the output of a command to an existing file. If the file doesn't exist, a new file is created. For example, `Get-TransportRulePredicate >> "C:\My Documents\Output.txt"`.|
 |**"**|Double quotation marks are used to enclose text strings that contains spaces.|
 |**$**|A dollar sign indicates a variable. For example, `$Blue = 10` assigns the value `10` to the variable `$Blue`.|
 |**@**|The @ symbol references an associative array. For more information, see [Arrays](https://technet.microsoft.com/library/599ed6d7-553a-41be-b4a3-aa75ab9dbb5d.aspx).|
